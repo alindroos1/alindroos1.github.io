@@ -1,6 +1,7 @@
 /* Här använder jag tone.js för att spela första takten ur Stranger Things-introt 
 där respektive ton är programmerad till att triggas med ett jämnt intervall på 0.2 sekunder.
-Melodislingan spelas direkt när du loggar in. */
+Melodislingan spelas direkt när du loggar in. Stranger Things är uppskattat bland många
+retrosynthare då skaparna bakom soundtracket använder gamla 70/80-talssynthtar. */
 
 const synth = new Tone.AMSynth(Tone.Synth).toDestination();
 const now = Tone.now()

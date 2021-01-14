@@ -1,0 +1,14 @@
+/* 
+I den här css-filen har jag definierat footer-classen som används på footern
+för att den ska fixeras i botten. Jag har även lagt till en media-query för att
+det endast ska appliceras i desktop. Detta är ingen optimal lösning eftersom den lägger sig
+ovanför innehållet (inloggningsformuläret) om webbläsaren skalas ner för mycket på höjden.
+*/
+@media screen and (min-width:576px) {
+    .footer {
+        position:fixed;
+        width:100%; 
+        bottom:0;
+    }
+}
+

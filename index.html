@@ -27,24 +27,12 @@
                 <h1 class="text-uppercase h5">Stickykeys</h1>
                 <img src="img/keys2.png" alt="" width="75%">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <form class="shadow p-3 mt-5 mb-5 bg-white rounded" action="home.html">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll always share your email with everyone
-                            else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-
-                    <!-- Detta ska gå till ett registreringsformulär -->
-                    <a href="#" class="btn btn-outline-primary">Register</a>
-                </form>
-            </div>
+            <form class="mt-5 mb-5" name="signinForm" action="home.html" onsubmit="return checkPass()">
+                <p>Username <br><input type="text" name="username"></p>
+                <p>Password <br><input type="password" name="password"></p>
+                <p id="passStatus"> </p>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
 
@@ -62,6 +50,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+    <!-- Inläsning av loginlogik-->
+    <script src="js/login.js"></script>
 </body>
 
 </html>
